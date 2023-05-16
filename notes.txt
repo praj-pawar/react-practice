@@ -1,0 +1,23 @@
+-The JSX function (the component) needs to return only one element, else it'll throw an error. (The outer div can have multiple elements)
+
+-In JSX, divs dont have class; they have className. 
+    Ex: <div className='div1'> ...</div>
+
+-We use import './' when we're importing a file from the same directory (same level)
+-import '../' if we wanna go one level up and import a file from there
+
+-For inline styling, we use two curly brackets. Ex: <h4 style={{color:red}}>
+The outer pair is for indicating that its a JS expression. The inner is for creating a JS object. In JS, dynamically varying variables are used within {}
+-Alternative option is to declare a const variable x={...} having all the CSS styling and use this in style={x}
+
+-The code inside {...} must be an expression i.e., it must return a value. It can't be a statement. 
+Ex- Can be -> {title}. Can't be -> {let x=9}
+
+-props is basically a JS object. Props can have variables, objects and even functions
+
+-If we want to access anything between components, we use children props
+Ex - <book> <p>...</p> </book>
+Now, we need to use the keyword 'children' if we want to access this
+
+-We use ${} to embed expressions inside a string literal! Not to be confused with {}, whose purpose is to deconstruct objects, use JS inside components, etc.
+
