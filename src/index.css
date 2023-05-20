@@ -11,7 +11,7 @@ body {
     color: #222;
 }
 
-.booklist{
+.booklist {
     width: 90vw;
     max-width: 1170px;
     margin: 5rem auto;
@@ -25,11 +25,13 @@ body {
         grid-template-columns: repeat(3, 1fr);
     }
 }
+
 .book {
-    background: #f2f2f2;
+    background: #fff;
     border-radius: 1rem;
     padding: 2rem;
     text-align: center;
+    position: relative;
 }
 
 .book img {
@@ -37,14 +39,31 @@ body {
     object-fit: cover;
 }
 
-.book h2{
+.book h2 {
     margin-top: 1rem;
     font-size: 1rem;
 }
 
-.book h4{
+.book h4 {
     color: '#617d98';
-    font-size:'1rem';
+    font-size: '1rem';
     margin-top: '0.5rem';
     letter-spacing: -1px;
+}
+
+.number {
+position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 1rem;
+    padding: 0.75rem;
+    border-top-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    background: #050505;
+    color: #fff;
+}
+
+h1{
+    text-align: center;
+    margin-top: 3rem;
 }
