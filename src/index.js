@@ -10,6 +10,7 @@ const Booklist=()=>
   const getBook=(id)=>{
     console.log(books.find((book)=>book.id === id))
   }
+
   
     return (
       <>
@@ -19,11 +20,19 @@ const Booklist=()=>
       {books.map((item, index)=>{
         //const {img, title, author, id}=item;
         return <Book {...item} getBook={getBook} number={index}/>
+
+    return <section className='booklist'>
+//       <Event/>
+      {books.map((item)=>{
+        //const {img, title, author, id}=item;
+        return <Book {...item} getBook={getBook}/>
+
         // Can also use the spread operator to assign props. Ex - return < Book {...item} key={id}/>
         // Here, item is passed as an entire object to the Book component below
       })}
       
         </section>
+
         </>
 )};
 // const formsubmit=(e)=>{
@@ -51,4 +60,5 @@ const Booklist=()=>
 
 const root=ReactDOM.createRoot(document.getElementById('root'));
 root.render(<Booklist/>);
+
 

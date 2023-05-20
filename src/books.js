@@ -1,6 +1,8 @@
+
 import img1 from './images/book1.jpg'
 import img2 from './images/book2.jpg'
 import img3 from './images/book3.jpg'
+
 
 
 
@@ -25,5 +27,5 @@ export const books=[
  img: img3,
  id:3
 }
-
 ];
+

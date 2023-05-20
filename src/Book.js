@@ -6,6 +6,7 @@
       <h2>{title}</h2>
       <h4>{author}</h4>
       <span className="number">#{number+1}</span>
+
       <button onClick={()=>getBook(id)}>Get Book</button>
     </article>;
   
