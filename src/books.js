@@ -1,23 +1,31 @@
+
+import img1 from './images/book1.jpg'
+import img2 from './images/book2.jpg'
+import img3 from './images/book3.jpg'
+
+
+
+
 export const books=[
 {
  author :'Piggyback' ,
  title:'The Legend of Zelda',
- img: 'https://images-na.ssl-images-amazon.com/images/I/91vwHMt+x7L._AC_UL600_SR600,400_.jpg',
+ img: img1,
  id:1
 },
 
 {
  author :'Glenn Boozan' ,
  title:'There Are Moms Way Worse Than You',
- img: 'https://images-na.ssl-images-amazon.com/images/I/81lJ9+mcvzL._AC_UL600_SR600,400_.jpg',
+ img: img2,
  id:2
 },
 
 {
  author :' James Clear' ,
  title:'Atomic Habits',
- img: 'https://images-na.ssl-images-amazon.com/images/I/81bGKUa1e0L._AC_UL600_SR600,400_.jpg',
+ img: img3,
  id:3
 }
-
 ];
+
